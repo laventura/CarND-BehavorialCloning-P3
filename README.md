@@ -6,7 +6,8 @@ Unlike other projects, the aim of this project is to train a car to drive itself
 
 #### Summary
 
-The simulated car drives autonomously along the Track. See video:
+The simulated car drives autonomously on Track 1. See video here:
+
 ![](self-driving-working2-small.m4v)
 
 --- 

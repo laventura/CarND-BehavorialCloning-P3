@@ -134,6 +134,10 @@ lr_schedule = ReduceLROnPlateau(monitor='val_loss', factor=0.2, patience=2, verb
 * **Adam Optimizer** Used the default Adam optimizer with initial `learning_rate=0.0001`
 * **Generator** Used a batch generator to continuously generate image batches of size 128. Tested out batch sizes of 64 and 256 as well, but stuck with 128 as this was the most optimal. During training, my MacbookPro kept running out of GPU memory and thus failed intermittently. This is likely a bug in TensorFlow. Thus I ended up training mostly on CPU.
 
+I trained the models for 5 epochs, and then evaluated the results on the track. Some models failed hilariously; the car went right into the lake. Others failed on the bridge. I took the promising models and further refined some hyperparams and increased the training time to 10-12 epochs. This resulted in the final. 
+
+As a side note, the validation loss did not matter a lot. The final validation loss was in the 0.03-0.05 range.
+
 #### Driving Results 
 On Track1 the model runs well. The simulated driving closely mimics the training samples; this is indicated most closely when the car takes sharp left turns after crossing the bridge. Additionally, it swerves a little on the bridge as I had manually added some swerving and recovery samples, especially while crossing the bridge. 
 

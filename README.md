@@ -74,12 +74,12 @@ I used the (simpler/smaller) NVIDIA end-to-end driving architecture. I modified 
 
 The final architecture is as follows:
 
-| Layer (type)                     | Output Shape          | Param #     | Connected to            |                   
-|__________________________________|_______________________|_______________________________________|
+| Layer (type)                     | Output Shape          | Param #     | Connected to            |
+|----------------------------------|-----------------------|-------------|-------------------------|
 | lambda_1 (Lambda)                | (None, 66, 200, 3)    | 0           | lambda_input_1[0][0]    |        
 | conv0 (Convolution2D)            | (None, 31, 98, 24)    | 1824        | lambda_1[0][0]          |         
 | conv1 (Convolution2D)            | (None, 14, 47, 36)    | 21636       | conv0[0][0]             |         
-| dropout_1 (Dropout)              | (None, 14, 47, 36)    | 0           | conv1[0][0]             |         
+| dropout_1 (Dropout)              | (None, 14, 47, 36)    | 0           | conv1[0][0]             | 
 | conv2 (Convolution2D)            | (None, 5, 22, 48)     | 43248       | dropout_1[0][0]         |         
 | conv3 (Convolution2D)            | (None, 3, 20, 64)     | 27712       | conv2[0][0]             |         
 | dropout_2 (Dropout)              | (None, 3, 20, 64)     | 0           | conv3[0][0]             |        

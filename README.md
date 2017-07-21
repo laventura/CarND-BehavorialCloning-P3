@@ -8,7 +8,8 @@ Unlike other projects, the aim of this project is to train a car to drive itself
 
 The simulated car drives autonomously on Track 1. See video here:
 
-![](self-driving-working2-small.m4v)
+
+[![Behavior Cloning - simulator](yt_video_img.png)](https://www.youtube.com/watch?v=vv8ZTT8IhvA)
 
 --- 
 
@@ -144,7 +145,7 @@ On Track1 the model runs well. The simulated driving closely mimics the training
 
 - Recovery. The car recovers well when is it swerving; this is likely because of recovery data (moving from close to right/left barries to the center of the lane) I added. 
 
-![](self-driving-working2-small.m4v)
+[![Behavior Cloning - simulator](yt_video_img.png)](https://www.youtube.com/watch?v=vv8ZTT8IhvA)
 
 #### Reflections
 
